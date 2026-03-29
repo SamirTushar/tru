@@ -44,14 +44,9 @@ export function TopBar() {
 
   return (
     <header className="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900">
-      <div>
-        <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-          {screen?.label}
-        </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
-          {subtitle}
-        </p>
-      </div>
+      <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+        {screen?.label}
+      </h1>
       <div className="flex items-center gap-2">
         {/* Master Filter Dropdown */}
         <div className="relative" ref={dropdownRef}>

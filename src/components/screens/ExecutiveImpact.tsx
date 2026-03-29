@@ -267,27 +267,8 @@ function BeforeAfterTab({ activeMaster }: { activeMaster: string }) {
     'Country Standardization': 'Raw country formats normalized to ISO standard',
   };
 
-  // Build chart data from numeric before/after values
-  const chartData = data
-    .filter(r => typeof r.before === 'number' && typeof r.after === 'number' && (r.before as number) > 0)
-    .map(r => ({ metric: r.metric.length > 18 ? r.metric.slice(0, 18) + '...' : r.metric, Before: r.before as number, After: r.after as number }));
-
   return (
     <>
-      {chartData.length > 0 && (
-        <div className="px-6 pt-4 pb-3">
-          <ResponsiveContainer width="100%" height={Math.max(chartData.length * 36, 140)}>
-            <BarChart data={chartData} layout="vertical" barGap={1} barCategoryGap="25%">
-              <XAxis type="number" axisLine={false} tickLine={false} tick={{ fill: '#9CA3AF', fontSize: 10 }} />
-              <YAxis type="category" dataKey="metric" axisLine={false} tickLine={false} tick={{ fill: '#9CA3AF', fontSize: 10 }} width={130} />
-              <RTooltip contentStyle={{ backgroundColor: '#1E293B', border: 'none', borderRadius: '8px', color: '#F1F5F9', fontSize: 12 }} />
-              <Legend iconType="circle" iconSize={7} wrapperStyle={{ fontSize: 11, color: '#9CA3AF', paddingTop: 4 }} />
-              <Bar dataKey="Before" fill="#CBD5E1" radius={[0, 3, 3, 0]} barSize={12} />
-              <Bar dataKey="After" fill="#F97316" radius={[0, 3, 3, 0]} barSize={12} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-      )}
     <table className="w-full text-sm">
       <thead>
         <tr>
