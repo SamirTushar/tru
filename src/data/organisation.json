@@ -1,0 +1,209 @@
+{
+  "tree": [
+    {
+      "unit": "Agthia Group",
+      "level": "Parent",
+      "goid": "GOID-G-001",
+      "children": [
+        {
+          "unit": "CBD",
+          "erp": "SAP",
+          "goid": "GOID-BU-001",
+          "hierarchy": "Consumer Business",
+          "divisions": 1
+        },
+        {
+          "unit": "BMB",
+          "erp": "Epicor",
+          "goid": "GOID-BU-003",
+          "hierarchy": "Bakery & Milling",
+          "children": [
+            {
+              "unit": "BMB01",
+              "goid": "GOID-DV-001"
+            },
+            {
+              "unit": "BMB02",
+              "goid": "GOID-DV-002"
+            },
+            {
+              "unit": "BMB03",
+              "goid": "GOID-DV-003"
+            },
+            {
+              "unit": "BMB05",
+              "goid": "GOID-DV-004"
+            },
+            {
+              "unit": "BMB08",
+              "goid": "GOID-DV-005"
+            },
+            {
+              "unit": "BMB10",
+              "goid": "GOID-DV-006"
+            }
+          ]
+        },
+        {
+          "unit": "Nabil",
+          "erp": "Oracle",
+          "goid": "GOID-BU-002",
+          "hierarchy": "Protein & Frozen",
+          "divisions": 0
+        },
+        {
+          "unit": "Atyab",
+          "erp": "Infor",
+          "goid": "GOID-BU-004",
+          "hierarchy": "Protein & Frozen",
+          "divisions": 0
+        }
+      ]
+    }
+  ],
+  "businessUnits": [
+    {
+      "name": "CBD",
+      "erp": "SAP",
+      "hierarchy": "Consumer Business",
+      "divisions": 1
+    },
+    {
+      "name": "BMB",
+      "erp": "Epicor",
+      "hierarchy": "Bakery & Milling",
+      "divisions": 6
+    },
+    {
+      "name": "Nabil",
+      "erp": "Oracle",
+      "hierarchy": "Protein & Frozen",
+      "divisions": 0
+    },
+    {
+      "name": "Atyab",
+      "erp": "Infor",
+      "hierarchy": "Protein & Frozen",
+      "divisions": 0
+    }
+  ],
+  "dashboard": {
+    "businessUnits": 4,
+    "erps": 4,
+    "divisions": 6,
+    "hierarchyLevels": 3,
+    "goidsAssigned": 10
+  },
+  "orgStructure": [
+    {
+      "Level": "",
+      "Organisation Unit": "AGTHIA GROUP (Parent)",
+      "Source System(ERP)": "",
+      "Hierarchy Level": "",
+      "GOID": "GOID-G-001",
+      "L1 : Group": "",
+      "L2 : Business Unit": "",
+      "L3 : Division": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "CBD — Consumer Business Division",
+      "Source System(ERP)": "SAP",
+      "Hierarchy Level": "L2: Consumer Business",
+      "GOID": "GOID-BU-001",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "CBD",
+      "L3 : Division": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "Nabil — Frozen Foods & Protein",
+      "Source System(ERP)": "Oracle",
+      "Hierarchy Level": "L2: Frozen Processed Protein",
+      "GOID": "GOID-BU-002",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "Nabil",
+      "L3 : Division": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB — Confectionery & Speciality",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L2: Confectionery",
+      "GOID": "GOID-BU-003",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB01",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L3: Division",
+      "GOID": "GOID-DV-001",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": "BMB01"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB02",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L3: Division",
+      "GOID": "GOID-DV-002",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": "BMB02"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB04",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L3: Division",
+      "GOID": "GOID-DV-003",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": "BMB04"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB07",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L3: Division",
+      "GOID": "GOID-DV-004",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": "BMB07"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB08",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L3: Division",
+      "GOID": "GOID-DV-005",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": "BMB08"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BMB10",
+      "Source System(ERP)": "Epicore",
+      "Hierarchy Level": "L3: Division",
+      "GOID": "GOID-DV-006",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "BMB",
+      "L3 : Division": "BMB10"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "Atyab — Dates & Water",
+      "Source System(ERP)": "Infor",
+      "Hierarchy Level": "L2: Food & Beverage",
+      "GOID": "GOID-BU-004",
+      "L1 : Group": "Agthia",
+      "L2 : Business Unit": "Atyab",
+      "L3 : Division": ""
+    }
+  ]
+}

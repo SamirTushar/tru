@@ -1,0 +1,3545 @@
+{
+  "sourceSystems": [
+    {
+      "id": "SAP",
+      "color": "#3B82F6",
+      "trustRank": 1
+    },
+    {
+      "id": "Oracle",
+      "color": "#F97316",
+      "trustRank": 2
+    },
+    {
+      "id": "Epicor",
+      "color": "#8B5CF6",
+      "trustRank": 3
+    },
+    {
+      "id": "Infor",
+      "color": "#06B6D4",
+      "trustRank": 4
+    }
+  ],
+  "revenueData": {
+    "total": 763410219.674388,
+    "currency": "AED",
+    "categories": {
+      "before": 50,
+      "after": 32
+    },
+    "customers": {
+      "before": 602,
+      "after": 442
+    },
+    "brands": {
+      "before": 34,
+      "after": 29
+    },
+    "channels": {
+      "before": 28,
+      "after": 12
+    }
+  },
+  "harmonizationTable": [
+    {
+      "dimension": "Category",
+      "beforeCount": 50,
+      "beforeTopShare": "24.5%",
+      "afterCount": 32,
+      "afterTopShare": "30.1%",
+      "reduction": "36%"
+    },
+    {
+      "dimension": "Customer",
+      "beforeCount": 602,
+      "beforeTopShare": "14.8%",
+      "afterCount": 442,
+      "afterTopShare": "14.8%",
+      "reduction": "27%"
+    },
+    {
+      "dimension": "Brand",
+      "beforeCount": 34,
+      "beforeTopShare": "43.4%",
+      "afterCount": 29,
+      "afterTopShare": "43.4%",
+      "reduction": "15%"
+    },
+    {
+      "dimension": "Sales Channel",
+      "beforeCount": 28,
+      "beforeTopShare": "65.1%",
+      "afterCount": 12,
+      "afterTopShare": "65.2%",
+      "reduction": "57%"
+    }
+  ],
+  "channelMapping": [
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "ASIA",
+      "Standard Channel": "Export-Asia"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "GCC BULK",
+      "Standard Channel": "DISTRIBUTION"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "GCC Retail",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "GIFT & SAMPLE",
+      "Standard Channel": "DIRECT SALES"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "GOVERNMENT",
+      "Standard Channel": "INSTITUTIONAL"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "INSTITUTION SALES",
+      "Standard Channel": "INSTITUTIONAL"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "REST OF WORLD",
+      "Standard Channel": "Export-Rest of World"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "SALES REPRESENTATIVE",
+      "Standard Channel": "DIRECT SALES"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw Channel": "Walk in Customer",
+      "Standard Channel": "DIRECT SALES"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Retailers",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Manufacturers",
+      "Standard Channel": "B2B"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Horeca",
+      "Standard Channel": "HORECA"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Consumer",
+      "Standard Channel": "DIRECT SALES"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Modern Trade",
+      "Standard Channel": "MODERN TRADE"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Duty Free",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Air Lines",
+      "Standard Channel": "INSTITUTIONAL"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Distributor",
+      "Standard Channel": "DISTRIBUTION"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw Channel": "Intercompany",
+      "Standard Channel": "INTERCOMPANY"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Key Account",
+      "Standard Channel": "MODERN TRADE"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Medium Supermarkets",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Self Service Stores",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Retailer E-Commerce",
+      "Standard Channel": "E-COMMERCE"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Groceries",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Fuel Stations",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw Channel": "Mini Markets",
+      "Standard Channel": "RETAIL"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw Channel": "B00",
+      "Standard Channel": "Unclassified"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw Channel": "CATERING",
+      "Standard Channel": "INSTITUTIONAL"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw Channel": "QSR'S",
+      "Standard Channel": "HORECA"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw Channel": "RETAIL",
+      "Standard Channel": "RETAIL"
+    }
+  ],
+  "regionMapping": [
+    {
+      "Source System(ERP)": "Infor",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Bahrain",
+      "Std Country": "BAHRAIN",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "India",
+      "Std Country": "INDIA",
+      "Raw Region": "",
+      "Std Region": "ASIA"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Oman",
+      "Std Country": "OMAN",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Qatar",
+      "Std Country": "QATAR",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Somalia",
+      "Std Country": "SOMALIA",
+      "Raw Region": "",
+      "Std Region": "AFRICA"
+    },
+    {
+      "Source System(ERP)": "Infor",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Qatar",
+      "Std Country": "QATAR",
+      "Raw Region": "Qatar",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "OMAN",
+      "Std Country": "OMAN",
+      "Raw Region": "OMAN",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "ABU DHABI",
+      "Std. City": "ABU DHABI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Ajman",
+      "Std. City": "AJMAN",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "AL AIN",
+      "Std. City": "AL AIN",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Al Barsha",
+      "Std. City": "DUBAI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Al Hamidiya 1",
+      "Std. City": "AJMAN",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "AL HASA",
+      "Std. City": "AL AHSA",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Al Karama",
+      "Std. City": "DUBAI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "AL KHOBER",
+      "Std. City": "AL KHOBAR",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "BADIYA",
+      "Std. City": "BADIYA",
+      "Raw Country": "KSA-North",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-North",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Bur Dubai",
+      "Std. City": "DUBAI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "BURAIDAH",
+      "Std. City": "BURAIDAH",
+      "Raw Country": "KSA-East",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-East",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "BURAIDAH",
+      "Raw Country": "KSA-West",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-West",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Buraydah",
+      "Std. City": "BURAIDAH",
+      "Raw Country": "KSA-Central",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-Central",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "CARIBOU COFFEE",
+      "Std. City": "CARIBOU COFFEE",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Dammam",
+      "Std. City": "DAMMAM",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "DAMMAM",
+      "Raw Country": "KSA-East",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-East",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Doha",
+      "Std. City": "DOHA",
+      "Raw Country": "Qatar",
+      "Std Country": "QATAR",
+      "Raw Region": "Qatar",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Dubai",
+      "Std. City": "DUBAI",
+      "Raw Country": "EGYPT",
+      "Std Country": "UNCLASSIFIED",
+      "Raw Region": "EGYPT",
+      "Std Region": "UNCLASSIFIED"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "SAUDI",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "SAUDI",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "DUBAI INVESTMENT PARK",
+      "Std. City": "DUBAI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Dubai Investment Park 2",
+      "Std. City": "DUBAI",
+      "Raw Country": "EGYPT",
+      "Std Country": "UNCLASSIFIED",
+      "Raw Region": "EGYPT",
+      "Std Region": "UNCLASSIFIED"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "FL",
+      "Std. City": "FLORIDA",
+      "Raw Country": "USA",
+      "Std Country": "USA",
+      "Raw Region": "USA",
+      "Std Region": "NORTH AMERICA"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Fujairah",
+      "Std. City": "FUJAIRAH",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "HAFRAL BATAN",
+      "Std. City": "HAFR AL BATIN",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "INTERNATIONAL CITY",
+      "Std. City": "DUBAI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "JEDDAH",
+      "Std. City": "JEDDAH",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "jumairah",
+      "Std. City": "JUMEIRAH",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Karachi",
+      "Std. City": "KARACHI",
+      "Raw Country": "PAKISTAN",
+      "Std Country": "PAKISTAN",
+      "Raw Region": "PAKISTAN",
+      "Std Region": "ASIA"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Khobar",
+      "Std. City": "AL KHOBAR",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "KSA",
+      "Std. City": "",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "KSA-Central",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-Central",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "KUWAIT",
+      "Std. City": "KUWAIT CITY",
+      "Raw Country": "KUWAIT",
+      "Std Country": "KUWAIT",
+      "Raw Region": "KUWAIT",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "LINCOLN",
+      "Std. City": "LINCOLN",
+      "Raw Country": "USA",
+      "Std Country": "USA",
+      "Raw Region": "USA",
+      "Std Region": "NORTH AMERICA"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "MANAMA",
+      "Std. City": "MANAMA",
+      "Raw Country": "BAHRAIN",
+      "Std Country": "BAHRAIN",
+      "Raw Region": "BAHRAIN",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "MOTOR CITY",
+      "Std. City": "DUBAI",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "P.O. Box 2623",
+      "Std. City": "P.O. Box 2623",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "RIYADH",
+      "Std. City": "RIYADH",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "KSA-Central",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-Central",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "KSA-East",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA-East",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Shaqra",
+      "Std. City": "SHAQRA",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Sharjah",
+      "Std. City": "SHARJAH",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "STERLING",
+      "Std. City": "STERLING",
+      "Raw Country": "USA",
+      "Std Country": "USA",
+      "Raw Region": "USA",
+      "Std Region": "NORTH AMERICA"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "Umm Al Quwain",
+      "Std. City": "UMM AL QUWAIN",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "UMQ",
+      "Std. City": "UMM AL QUWAIN",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "UAE",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Epicore",
+      "Raw City": "USA",
+      "Std. City": "",
+      "Raw Country": "USA",
+      "Std Country": "USA",
+      "Raw Region": "USA",
+      "Std Region": "NORTH AMERICA"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "ABU DHABI",
+      "Std. City": "ABU DHABI",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "AL AIN",
+      "Std. City": "AL AIN",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "AUH",
+      "Std. City": "ABU DHABI",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "DUBAI",
+      "Std. City": "DUBAI",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "DXB",
+      "Std. City": "DUBAI",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "FUJ",
+      "Std. City": "FUJAIRAH",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "NE",
+      "Std. City": "NORTHERN EMIRATES",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "RAK",
+      "Std. City": "RAS AL KHAIMAH",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "SHARJAH",
+      "Std. City": "SHARJAH",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "SAP",
+      "Raw City": "SHJ",
+      "Std. City": "SHARJAH",
+      "Raw Country": "",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Azerbaijan",
+      "Std Country": "AZERBAIJAN",
+      "Raw Region": "",
+      "Std Region": "ASIA"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Bahrain",
+      "Std Country": "BAHRAIN",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Iraq",
+      "Std Country": "IRAQ",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "KSA",
+      "Std Country": "SAUDI ARABIA",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Kuwait",
+      "Std Country": "KUWAIT",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Lebanon",
+      "Std Country": "LEBANON",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Oman",
+      "Std Country": "OMAN",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Pakistan",
+      "Std Country": "PAKISTAN",
+      "Raw Region": "",
+      "Std Region": "ASIA"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Qatar",
+      "Std Country": "QATAR",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "Tunisia",
+      "Std Country": "TUNISIA",
+      "Raw Region": "",
+      "Std Region": "AFRICA"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "UAE",
+      "Std Country": "UAE",
+      "Raw Region": "",
+      "Std Region": "MIDDLE EAST"
+    },
+    {
+      "Source System(ERP)": "Oracle",
+      "Raw City": "",
+      "Std. City": "",
+      "Raw Country": "USA",
+      "Std Country": "USA",
+      "Raw Region": "",
+      "Std Region": "NORTH AMERICA"
+    }
+  ],
+  "locationAuditTrail": [
+    {
+      "Row ID": "L0001",
+      "Source": "Infor",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Bahrain",
+      "S2: Country (Std)": "BAHRAIN",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_001"
+    },
+    {
+      "Row ID": "L0002",
+      "Source": "Infor",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "India",
+      "S2: Country (Std)": "INDIA",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "ASIA",
+      "S3 Changes": "()→ASIA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_002"
+    },
+    {
+      "Row ID": "L0003",
+      "Source": "Infor",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Oman",
+      "S2: Country (Std)": "OMAN",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_003"
+    },
+    {
+      "Row ID": "L0004",
+      "Source": "Infor",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Qatar",
+      "S2: Country (Std)": "QATAR",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_004"
+    },
+    {
+      "Row ID": "L0005",
+      "Source": "Infor",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Somalia",
+      "S2: Country (Std)": "SOMALIA",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "AFRICA",
+      "S3 Changes": "()→AFRICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_005"
+    },
+    {
+      "Row ID": "L0006",
+      "Source": "Infor",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_006"
+    },
+    {
+      "Row ID": "L0007",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Qatar",
+      "S2: Country (Std)": "QATAR",
+      "S2 Changes": "UPPER",
+      "Raw Region": "Qatar",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "Qatar→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_004"
+    },
+    {
+      "Row ID": "L0008",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "OMAN",
+      "S2: Country (Std)": "OMAN",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "OMAN",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "OMAN→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_003"
+    },
+    {
+      "Row ID": "L0009",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_006"
+    },
+    {
+      "Row ID": "L0010",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "ABU DHABI",
+      "S1: City (Std)": "ABU DHABI",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_015"
+    },
+    {
+      "Row ID": "L0011",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Ajman",
+      "S1: City (Std)": "AJMAN",
+      "S1 Changes": "UPPER",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_016"
+    },
+    {
+      "Row ID": "L0012",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "AL AIN",
+      "S1: City (Std)": "AL AIN",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_017"
+    },
+    {
+      "Row ID": "L0013",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Al Barsha",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "AI Barsha→DUBAI",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0014",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Al Hamidiya 1",
+      "S1: City (Std)": "AJMAN",
+      "S1 Changes": "Al Hamidiya 1→AJMAN",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_016"
+    },
+    {
+      "Row ID": "L0015",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "AL HASA",
+      "S1: City (Std)": "AL AHSA",
+      "S1 Changes": "AL HASA→AL AHSA",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_019"
+    },
+    {
+      "Row ID": "L0016",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Al Karama",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "Al Karama→DUBAI",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0017",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "AL KHOBER",
+      "S1: City (Std)": "AL KHOBAR",
+      "S1 Changes": "AL KHOBER→AL KHOBAR",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_020"
+    },
+    {
+      "Row ID": "L0018",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "BADIYA",
+      "S1: City (Std)": "BADIYA",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "KSA-North",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-North→SAUDI ARABIA",
+      "Raw Region": "KSA-North",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-North→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_021"
+    },
+    {
+      "Row ID": "L0019",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Bur Dubai",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "Bur Dubai→DUBAI",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0020",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "BURAIDAH",
+      "S1: City (Std)": "BURAIDAH",
+      "S1 Changes": "UPPER",
+      "Raw Country": "KSA-East",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-East→SAUDI ARABIA",
+      "Raw Region": "KSA-East",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-East→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_022"
+    },
+    {
+      "Row ID": "L0021",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "BURAIDAH",
+      "S1: City (Std)": "BURAIDAH",
+      "S1 Changes": "UPPER",
+      "Raw Country": "KSA-West",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-West→SAUDI ARABIA",
+      "Raw Region": "KSA-West",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-West→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_022"
+    },
+    {
+      "Row ID": "L0022",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Buraydah",
+      "S1: City (Std)": "BURAIDAH",
+      "S1 Changes": "Buraydah→BURAIDAH",
+      "Raw Country": "KSA-Central",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-Central→SAUDI ARABIA",
+      "Raw Region": "KSA-Central",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-Central→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_022"
+    },
+    {
+      "Row ID": "L0023",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "CARIBOU COFFEE",
+      "S1: City (Std)": "CARIBOU COFFEE",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_025"
+    },
+    {
+      "Row ID": "L0024",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Dammam",
+      "S1: City (Std)": "DAMMAM",
+      "S1 Changes": "UPPER",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_026"
+    },
+    {
+      "Row ID": "L0025",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Dammam",
+      "S1: City (Std)": "DAMMAM",
+      "S1 Changes": "UPPER",
+      "Raw Country": "KSA-East",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-East→SAUDI ARABIA",
+      "Raw Region": "KSA-East",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-East→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_026"
+    },
+    {
+      "Row ID": "L0026",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Doha",
+      "S1: City (Std)": "DOHA",
+      "S1 Changes": "UPPER",
+      "Raw Country": "Qatar",
+      "S2: Country (Std)": "QATAR",
+      "S2 Changes": "UPPER",
+      "Raw Region": "Qatar",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "Qatar→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_027"
+    },
+    {
+      "Row ID": "L0027",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Dubai",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "UPPER",
+      "Raw Country": "EGYPT",
+      "S2: Country (Std)": "UNCLASSIFIED",
+      "S2 Changes": "EGYPT→UNCLASSIFIED",
+      "Raw Region": "EGYPT",
+      "S3: Region (Std)": "UNCLASSIFIED",
+      "S3 Changes": "EGYPT→UNCLASSIFIED",
+      "QUALITY": "INVALID",
+      "GCID": "#N/A"
+    },
+    {
+      "Row ID": "L0028",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "SAUDI",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "SAUDI→SAUDI ARABIA",
+      "Raw Region": "SAUDI",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "SAUDI→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_007"
+    },
+    {
+      "Row ID": "L0029",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_006"
+    },
+    {
+      "Row ID": "L0030",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "DUBAI INVESTMENT PARK",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "DUBAI INVESTMENT PARK→DUBAI",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0031",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Dubai Investment Park 2",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "Dubai Investment Park 2→DUBAI",
+      "Raw Country": "EGYPT",
+      "S2: Country (Std)": "UNCLASSIFIED",
+      "S2 Changes": "EGYPT→UNCLASSIFIED",
+      "Raw Region": "EGYPT",
+      "S3: Region (Std)": "UNCLASSIFIED",
+      "S3 Changes": "EGYPT→UNCLASSIFIED",
+      "QUALITY": "INVALID",
+      "GCID": "#N/A"
+    },
+    {
+      "Row ID": "L0032",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_006"
+    },
+    {
+      "Row ID": "L0033",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "FL",
+      "S1: City (Std)": "FLORIDA",
+      "S1 Changes": "FL→FLORIDA",
+      "Raw Country": "USA",
+      "S2: Country (Std)": "USA",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "USA",
+      "S3: Region (Std)": "NORTH AMERICA",
+      "S3 Changes": "USA→NORTH AMERICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_029"
+    },
+    {
+      "Row ID": "L0034",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Fujairah",
+      "S1: City (Std)": "FUJAIRAH",
+      "S1 Changes": "UPPER",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_030"
+    },
+    {
+      "Row ID": "L0035",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "HAFRAL BATAN",
+      "S1: City (Std)": "HAFR AL BATIN",
+      "S1 Changes": "HAFRAL BATAN→HAFR AL BATIN",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_031"
+    },
+    {
+      "Row ID": "L0036",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "INTERNATIONAL CITY",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "INTERNATIONAL CITY→DUBAI",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0037",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "JEDDAH",
+      "S1: City (Std)": "JEDDAH",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_032"
+    },
+    {
+      "Row ID": "L0038",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "jumairah",
+      "S1: City (Std)": "JUMEIRAH",
+      "S1 Changes": "jumairah→JUMEIRAH",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_033"
+    },
+    {
+      "Row ID": "L0039",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Karachi",
+      "S1: City (Std)": "KARACHI",
+      "S1 Changes": "UPPER",
+      "Raw Country": "PAKISTAN",
+      "S2: Country (Std)": "PAKISTAN",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "PAKISTAN",
+      "S3: Region (Std)": "ASIA",
+      "S3 Changes": "PAKISTAN→ASIA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_034"
+    },
+    {
+      "Row ID": "L0040",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Khobar",
+      "S1: City (Std)": "AL KHOBAR",
+      "S1 Changes": "Khobar→AL KHOBAR",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_020"
+    },
+    {
+      "Row ID": "L0041",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "KSA",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "KSA→ALL",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_007"
+    },
+    {
+      "Row ID": "L0042",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "KSA-Central",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-Central→SAUDI ARABIA",
+      "Raw Region": "KSA-Central",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-Central→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_007"
+    },
+    {
+      "Row ID": "L0043",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "KUWAIT",
+      "S1: City (Std)": "KUWAIT CITY",
+      "S1 Changes": "KUWAIT→KUWAIT CITY",
+      "Raw Country": "KUWAIT",
+      "S2: Country (Std)": "KUWAIT",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "KUWAIT",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KUWAIT→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_035"
+    },
+    {
+      "Row ID": "L0044",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "LINCOLN",
+      "S1: City (Std)": "LINCOLN",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "USA",
+      "S2: Country (Std)": "USA",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "USA",
+      "S3: Region (Std)": "NORTH AMERICA",
+      "S3 Changes": "USA→NORTH AMERICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_036"
+    },
+    {
+      "Row ID": "L0045",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "MANAMA",
+      "S1: City (Std)": "MANAMA",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "BAHRAIN",
+      "S2: Country (Std)": "BAHRAIN",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "BAHRAIN",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "BAHRAIN→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_037"
+    },
+    {
+      "Row ID": "L0046",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "MOTOR CITY",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "MOTOR CITY→DUBAI",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0047",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "P.O. Box 2623",
+      "S1: City (Std)": "P.O. Box 2623",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "SUSPECT",
+      "GCID": "GLID_038"
+    },
+    {
+      "Row ID": "L0048",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "RIYADH",
+      "S1: City (Std)": "RIYADH",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_039"
+    },
+    {
+      "Row ID": "L0049",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "KSA-Central",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-Central→SAUDI ARABIA",
+      "Raw Region": "KSA-Central",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-Central→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_007"
+    },
+    {
+      "Row ID": "L0050",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "KSA-East",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA-East→SAUDI ARABIA",
+      "Raw Region": "KSA-East",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA-East→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_007"
+    },
+    {
+      "Row ID": "L0051",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Shaqra",
+      "S1: City (Std)": "SHAQRA",
+      "S1 Changes": "UPPER",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "KSA",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "KSA→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_040"
+    },
+    {
+      "Row ID": "L0052",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Sharjah",
+      "S1: City (Std)": "SHARJAH",
+      "S1 Changes": "UPPER",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_041"
+    },
+    {
+      "Row ID": "L0053",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "STERLING",
+      "S1: City (Std)": "STERLING",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "USA",
+      "S2: Country (Std)": "USA",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "USA",
+      "S3: Region (Std)": "NORTH AMERICA",
+      "S3 Changes": "USA→NORTH AMERICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_042"
+    },
+    {
+      "Row ID": "L0054",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "Umm Al Quwain",
+      "S1: City (Std)": "UMM AL QUWAIN",
+      "S1 Changes": "UPPER",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_043"
+    },
+    {
+      "Row ID": "L0055",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "UMQ",
+      "S1: City (Std)": "UMM AL QUWAIN",
+      "S1 Changes": "UMQ→UMM AL QUWAIN",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "UAE",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "UAE→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_043"
+    },
+    {
+      "Row ID": "L0056",
+      "Source": "Epicore",
+      "Location ID": "",
+      "Raw City": "USA",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "USA→ALL",
+      "Raw Country": "USA",
+      "S2: Country (Std)": "USA",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "USA",
+      "S3: Region (Std)": "NORTH AMERICA",
+      "S3 Changes": "USA→NORTH AMERICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_008"
+    },
+    {
+      "Row ID": "L0057",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "ABU DHABI",
+      "S1: City (Std)": "ABU DHABI",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_015"
+    },
+    {
+      "Row ID": "L0058",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "AL AIN",
+      "S1: City (Std)": "AL AIN",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_017"
+    },
+    {
+      "Row ID": "L0059",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "AUH",
+      "S1: City (Std)": "ABU DHABI",
+      "S1 Changes": "AUH→ABU DHABI",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_015"
+    },
+    {
+      "Row ID": "L0060",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "DUBAI",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0061",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "DXB",
+      "S1: City (Std)": "DUBAI",
+      "S1 Changes": "DXB→DUBAI",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_018"
+    },
+    {
+      "Row ID": "L0062",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "FUJ",
+      "S1: City (Std)": "FUJAIRAH",
+      "S1 Changes": "FUJ→FUJAIRAH",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_030"
+    },
+    {
+      "Row ID": "L0063",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "NE",
+      "S1: City (Std)": "NORTHERN EMIRATES",
+      "S1 Changes": "NE→NORTHERN EMIRATES",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_044"
+    },
+    {
+      "Row ID": "L0064",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "RAK",
+      "S1: City (Std)": "RAS AL KHAIMAH",
+      "S1 Changes": "RAK→RAS AL KHAIMAH",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_045"
+    },
+    {
+      "Row ID": "L0065",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "SHARJAH",
+      "S1: City (Std)": "SHARJAH",
+      "S1 Changes": "NO CHANGE",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_041"
+    },
+    {
+      "Row ID": "L0066",
+      "Source": "SAP",
+      "Location ID": "",
+      "Raw City": "SHJ",
+      "S1: City (Std)": "SHARJAH",
+      "S1 Changes": "SHJ→SHARJAH",
+      "Raw Country": "",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "()→UAE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_041"
+    },
+    {
+      "Row ID": "L0067",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "COSTCO BAKLAVA WITH HONEY 2.2 LBS/1KG SAN DIEGO BOX",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Azerbaijan",
+      "S2: Country (Std)": "AZERBAIJAN",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "ASIA",
+      "S3 Changes": "()→ASIA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_011"
+    },
+    {
+      "Row ID": "L0068",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "ARABIC SWEETS - BASBOUSA MIX CREAM",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Bahrain",
+      "S2: Country (Std)": "BAHRAIN",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_001"
+    },
+    {
+      "Row ID": "L0069",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "ASATEER PREMIUM BAKLAWA BOX 175G",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Iraq",
+      "S2: Country (Std)": "IRAQ",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_012"
+    },
+    {
+      "Row ID": "L0070",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "ARABIC SWEETS-BISCUIT ROLL BROWN (0123-KG)",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "KSA",
+      "S2: Country (Std)": "SAUDI ARABIA",
+      "S2 Changes": "KSA→SAUDI ARABIA",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_007"
+    },
+    {
+      "Row ID": "L0071",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "ARABIC SWEETS-FEULLITINE STANDARD (0123-KG)",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Kuwait",
+      "S2: Country (Std)": "KUWAIT",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_009"
+    },
+    {
+      "Row ID": "L0072",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "ARABIC SWEETS-FEULLITINE CARAMELIZED (0123-KG)",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Lebanon",
+      "S2: Country (Std)": "LEBANON",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_013"
+    },
+    {
+      "Row ID": "L0073",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "VEGAN WAY-PILLOW PACKED-SESAME DATE BAR 1PCS",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Oman",
+      "S2: Country (Std)": "OMAN",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_003"
+    },
+    {
+      "Row ID": "L0074",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "ARABIC SWEETS-KUNAFA DOUGH",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Pakistan",
+      "S2: Country (Std)": "PAKISTAN",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "ASIA",
+      "S3 Changes": "()→ASIA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_010"
+    },
+    {
+      "Row ID": "L0075",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "Burj Khalifa Tincan - Dubai Duty Free 20x250G",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Qatar",
+      "S2: Country (Std)": "QATAR",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_004"
+    },
+    {
+      "Row ID": "L0076",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "Burj Al Arab Tincan - Dubai Duty Free 20x280G",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "Tunisia",
+      "S2: Country (Std)": "TUNISIA",
+      "S2 Changes": "UPPER",
+      "Raw Region": "",
+      "S3: Region (Std)": "AFRICA",
+      "S3 Changes": "()→AFRICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_014"
+    },
+    {
+      "Row ID": "L0077",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "Burj Khalifa Tincan 250G",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "UAE",
+      "S2: Country (Std)": "UAE",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "",
+      "S3: Region (Std)": "MIDDLE EAST",
+      "S3 Changes": "()→MIDDLE EAST",
+      "QUALITY": "VALID",
+      "GCID": "GLID_006"
+    },
+    {
+      "Row ID": "L0078",
+      "Source": "Oracle",
+      "Location ID": "",
+      "Raw City": "Burj Al Arab Tincan 280G",
+      "S1: City (Std)": "ALL",
+      "S1 Changes": "()→All",
+      "Raw Country": "USA",
+      "S2: Country (Std)": "USA",
+      "S2 Changes": "NO CHANGE",
+      "Raw Region": "",
+      "S3: Region (Std)": "NORTH AMERICA",
+      "S3 Changes": "()→NORTH AMERICA",
+      "QUALITY": "VALID",
+      "GCID": "GLID_008"
+    }
+  ],
+  "locationHierarchy": [
+    {
+      "Level": "└─",
+      "Organisation Unit": "AFRICA",
+      "Hierarchy Level": "L1: Region",
+      "GLID": "GLID-RE-001",
+      "L1 : Region": "AFRICA",
+      "L2 : Country": "",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "SOMALIA",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-001",
+      "L1 : Region": "AFRICA",
+      "L2 : Country": "SOMALIA",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "TUNISIA",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-002",
+      "L1 : Region": "AFRICA",
+      "L2 : Country": "TUNISIA",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "ASIA",
+      "Hierarchy Level": "L1: Region",
+      "GLID": "GLID-RE-002",
+      "L1 : Region": "ASIA",
+      "L2 : Country": "",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "AZERBAIJAN",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-003",
+      "L1 : Region": "ASIA",
+      "L2 : Country": "AZERBAIJAN",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "INDIA",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-004",
+      "L1 : Region": "ASIA",
+      "L2 : Country": "INDIA",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "PAKISTAN",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-005",
+      "L1 : Region": "ASIA",
+      "L2 : Country": "PAKISTAN",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "NORTH AMERICA",
+      "Hierarchy Level": "L1: Region",
+      "GLID": "GLID-RE-003",
+      "L1 : Region": "NORTH AMERICA",
+      "L2 : Country": "",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "USA",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-006",
+      "L1 : Region": "NORTH AMERICA",
+      "L2 : Country": "USA",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "FLORIDA",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-001",
+      "L1 : Region": "NORTH AMERICA",
+      "L2 : Country": "USA",
+      "L3 : City": "FLORIDA"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "LINCOLN",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-002",
+      "L1 : Region": "NORTH AMERICA",
+      "L2 : Country": "USA",
+      "L3 : City": "LINCOLN"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "STERLING",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-003",
+      "L1 : Region": "NORTH AMERICA",
+      "L2 : Country": "USA",
+      "L3 : City": "STERLING"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "MIDDLE EAST",
+      "Hierarchy Level": "L1: Region",
+      "GLID": "GLID-RE-004",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BAHRAIN",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-007",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "BAHRAIN",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "MANAMA",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-004",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "BAHRAIN",
+      "L3 : City": "MANAMA"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "IRAQ",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-008",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "IRAQ",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "KUWAIT",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-009",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KUWAIT",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "KUWAIT CITY",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-005",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KUWAIT",
+      "L3 : City": "KUWAIT CITY"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "LEBANON",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-010",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "LEBANON",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "OMAN",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-011",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "OMAN",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "QATAR",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-012",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "QATAR",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "DOHA",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-006",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "QATAR",
+      "L3 : City": "DOHA"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "KSA",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-013",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "AL AHSA",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-007",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "AL AHSA"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "AL KHOBAR",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-008",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "AL KHOBAR"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BADIYA",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-009",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "BADIYA"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "BURAIDAH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-010",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "BURAIDAH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "DAMMAM",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-011",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "DAMMAM"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "HAFR AL BATIN",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-012",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "HAFR AL BATIN"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "JEDDAH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-013",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "JEDDAH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "RIYADH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-014",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "RIYADH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "SHAQRA",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-015",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "KSA",
+      "L3 : City": "SHAQRA"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "UAE",
+      "Hierarchy Level": "L2: Country",
+      "GLID": "GLID-CO-014",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": ""
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "ABU DHABI",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-016",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "ABU DHABI"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "AJMAN",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-017",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "AJMAN"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "AL AIN",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-018",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "AL AIN"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "DUBAI",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-019",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "DUBAI"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "FUJAIRAH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-020",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "FUJAIRAH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "JUMEIRAH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-021",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "JUMEIRAH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "NORTHERN EMIRATES",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-022",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "NORTHERN EMIRATES"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "RAS AL KHAIMAH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-023",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "RAS AL KHAIMAH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "SHARJAH",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-024",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "SHARJAH"
+    },
+    {
+      "Level": "└─",
+      "Organisation Unit": "UMM AL QUWAIN",
+      "Hierarchy Level": "L3: City",
+      "GLID": "GLID-CI-025",
+      "L1 : Region": "MIDDLE EAST",
+      "L2 : Country": "UAE",
+      "L3 : City": "UMM AL QUWAIN"
+    }
+  ],
+  "groupTreeDeepDive": [
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Lulu Hypermarket LLC",
+      "SalesAED_Before": "15919183",
+      "PctOfGroup_Before": "19.0%",
+      "GoldenName": "LULU HYPERMARKET",
+      "SalesAED_After": "67616731",
+      "PctOfGroup_After": "80.6%",
+      "NamesMerged": "53 names",
+      "RevenueLiftedAED": "51697548"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "LULU HYPERMARKET - SOLE PROPRIETORS",
+      "SalesAED_Before": "2983394",
+      "PctOfGroup_Before": "3.6%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "LULU HYPERMARKET L.L.C BRANCH",
+      "SalesAED_Before": "2942713",
+      "PctOfGroup_Before": "3.5%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "LULU HYPERMARKET LLC",
+      "SalesAED_Before": "2394858",
+      "PctOfGroup_Before": "2.9%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Lulu Express Fresh Market Sole",
+      "SalesAED_Before": "1873193",
+      "PctOfGroup_Before": "2.2%",
+      "GoldenName": "LULU EXPRESS",
+      "SalesAED_After": "7689652",
+      "PctOfGroup_After": "9.2%",
+      "NamesMerged": "13 names",
+      "RevenueLiftedAED": "5816459"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Lulu Express Fresh Market –",
+      "SalesAED_Before": "1355151",
+      "PctOfGroup_Before": "1.6%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Lulu Express Fresh Market-",
+      "SalesAED_Before": "786566",
+      "PctOfGroup_Before": "0.9%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Lulu Express Trading Sole Proprieto",
+      "SalesAED_Before": "775560",
+      "PctOfGroup_Before": "0.9%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Lulu Express Supermarket -",
+      "SalesAED_Before": "2287297",
+      "PctOfGroup_Before": "2.7%",
+      "GoldenName": "LULU EXPRESS SUPERMARKET",
+      "SalesAED_After": "6339085",
+      "PctOfGroup_After": "7.6%",
+      "NamesMerged": "11 names",
+      "RevenueLiftedAED": "4051788"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "LULU EXPRESS SUPERMARKET- Sole",
+      "SalesAED_Before": "1343076",
+      "PctOfGroup_Before": "1.6%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Lulu Express Supermarket -Sole",
+      "SalesAED_Before": "1044113",
+      "PctOfGroup_Before": "1.2%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "LuLu Express Supermarket -",
+      "SalesAED_Before": "347233",
+      "PctOfGroup_Before": "0.4%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Lulu Center LLC",
+      "SalesAED_Before": "860859",
+      "PctOfGroup_Before": "1.0%",
+      "GoldenName": "LULU CENTER",
+      "SalesAED_After": "1728656",
+      "PctOfGroup_After": "2.1%",
+      "NamesMerged": "3 names",
+      "RevenueLiftedAED": "867797"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "LULU CENTER LLC  BR.MUHAISANAH DXB",
+      "SalesAED_Before": "612286",
+      "PctOfGroup_Before": "0.7%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Lulu Center - Sole Proprietorship L",
+      "SalesAED_Before": "255511",
+      "PctOfGroup_Before": "0.3%"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Lulu Supermarket LLC, Karama Dubai",
+      "SalesAED_Before": "491611",
+      "PctOfGroup_Before": "0.6%",
+      "GoldenName": "LULU SUPERMARKET KARAMA",
+      "SalesAED_After": "491611",
+      "PctOfGroup_After": "0.6%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "LULU GROUP  |  Revenue: AED 83,865,735  |  82 raw names → 6 golden names  |  93% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Lulu",
+      "SalesAED_Before": "0",
+      "PctOfGroup_Before": "0.0%",
+      "GoldenName": "LULU",
+      "SalesAED_After": "0",
+      "PctOfGroup_After": "0.0%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Al Madina Hypermarket LLC O.P.C",
+      "SalesAED_Before": "4032357",
+      "PctOfGroup_Before": "26.9%",
+      "GoldenName": "AL MADINA",
+      "SalesAED_After": "10487952",
+      "PctOfGroup_After": "70.1%",
+      "NamesMerged": "18 names",
+      "RevenueLiftedAED": "6455595"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "AL MADINA FRESH MART L.L.C O.P.C",
+      "SalesAED_Before": "2182998",
+      "PctOfGroup_Before": "14.6%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "AlMadina Distribution centre LLC",
+      "SalesAED_Before": "1121047",
+      "PctOfGroup_Before": "7.5%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Al Madina S/M - Fujairah",
+      "SalesAED_Before": "1113641",
+      "PctOfGroup_Before": "7.4%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Amber Al Madina HyperMarket",
+      "SalesAED_Before": "449258",
+      "PctOfGroup_Before": "3.0%",
+      "GoldenName": "AMBER AL MADINA",
+      "SalesAED_After": "846783",
+      "PctOfGroup_After": "5.7%",
+      "NamesMerged": "3 names",
+      "RevenueLiftedAED": "397525"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Amber Al Madina HyperMarket Branch",
+      "SalesAED_Before": "212172",
+      "PctOfGroup_Before": "1.4%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Amber Madinat Al Qasimiya",
+      "SalesAED_Before": "185353",
+      "PctOfGroup_Before": "1.2%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "SAHAB AL MADINA HYPERMARKET- L.L.C",
+      "SalesAED_Before": "606713",
+      "PctOfGroup_Before": "4.1%",
+      "GoldenName": "SAHAB AL MADINA",
+      "SalesAED_After": "606713",
+      "PctOfGroup_After": "4.1%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Nawaes Almadina Supermarket (Llc)",
+      "SalesAED_Before": "352410",
+      "PctOfGroup_Before": "2.4%",
+      "GoldenName": "NAWAES ALMADINA SUPERMARKET",
+      "SalesAED_After": "595214",
+      "PctOfGroup_After": "4.0%",
+      "NamesMerged": "2 names",
+      "RevenueLiftedAED": "242804"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Nawaes Almadina Supermarket (Llc)Br",
+      "SalesAED_Before": "242804",
+      "PctOfGroup_Before": "1.6%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "New AL Madina hypermarket LLC br 16",
+      "SalesAED_Before": "176759",
+      "PctOfGroup_Before": "1.2%",
+      "GoldenName": "NEW AL MADINA",
+      "SalesAED_After": "374114",
+      "PctOfGroup_After": "2.5%",
+      "NamesMerged": "3 names",
+      "RevenueLiftedAED": "197355"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "New AL Madina supermarket LLC 1",
+      "SalesAED_Before": "112924",
+      "PctOfGroup_Before": "0.8%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "NEW AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "84431",
+      "PctOfGroup_Before": "0.6%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "EXPRESS AL MADINA HYPERMARKET TWO L",
+      "SalesAED_Before": "136180",
+      "PctOfGroup_Before": "0.9%",
+      "GoldenName": "EXPRESS AL MADINA",
+      "SalesAED_After": "330287",
+      "PctOfGroup_After": "2.2%",
+      "NamesMerged": "3 names",
+      "RevenueLiftedAED": "194107"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "EXPRESS AL MADINA HYPERMARKET LLC",
+      "SalesAED_Before": "128138",
+      "PctOfGroup_Before": "0.9%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "EXPRESS AL MADINA HYPERMARKET LLC B",
+      "SalesAED_Before": "65969",
+      "PctOfGroup_Before": "0.4%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Darab Al Madina Hypermarket LLC",
+      "SalesAED_Before": "304557",
+      "PctOfGroup_Before": "2.0%",
+      "GoldenName": "DARAB AL MADINA",
+      "SalesAED_After": "304557",
+      "PctOfGroup_After": "2.0%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "ADWAA AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "202825",
+      "PctOfGroup_Before": "1.4%",
+      "GoldenName": "ADWAA AL MADINA",
+      "SalesAED_After": "202825",
+      "PctOfGroup_After": "1.4%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "HILAL AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "193948",
+      "PctOfGroup_Before": "1.3%",
+      "GoldenName": "HILAL AL MADINA",
+      "SalesAED_After": "193948",
+      "PctOfGroup_After": "1.3%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "AZHAR AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "168777",
+      "PctOfGroup_Before": "1.1%",
+      "GoldenName": "AZHAR AL MADINA",
+      "SalesAED_After": "168777",
+      "PctOfGroup_After": "1.1%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "FALAK AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "114129",
+      "PctOfGroup_Before": "0.8%",
+      "GoldenName": "FALAK AL MADINA",
+      "SalesAED_After": "144901",
+      "PctOfGroup_After": "1.0%",
+      "NamesMerged": "2 names",
+      "RevenueLiftedAED": "30772"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "FALAK AL MADINA HYPERMARKET LLC",
+      "SalesAED_Before": "30772",
+      "PctOfGroup_Before": "0.2%"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "WARQA AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "120513",
+      "PctOfGroup_Before": "0.8%",
+      "GoldenName": "WARQA AL MADINA",
+      "SalesAED_After": "120513",
+      "PctOfGroup_After": "0.8%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "RAFA AL MADINA HYPER MARKET L.L.C",
+      "SalesAED_Before": "108971",
+      "PctOfGroup_Before": "0.7%",
+      "GoldenName": "RAFA AL MADINA",
+      "SalesAED_After": "108971",
+      "PctOfGroup_After": "0.7%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "OLAYA AL MADINA",
+      "SalesAED_Before": "87574",
+      "PctOfGroup_Before": "0.6%",
+      "GoldenName": "OLAYA AL MADINA",
+      "SalesAED_After": "87574",
+      "PctOfGroup_After": "0.6%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Al Madinatain supermarket LLC",
+      "SalesAED_Before": "84085",
+      "PctOfGroup_Before": "0.6%",
+      "GoldenName": "AL MADINATAIN",
+      "SalesAED_After": "84085",
+      "PctOfGroup_After": "0.6%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "SAHARAA AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "58454",
+      "PctOfGroup_Before": "0.4%",
+      "GoldenName": "SAHARAA AL MADINA",
+      "SalesAED_After": "58454",
+      "PctOfGroup_After": "0.4%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "FAJER AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "48350",
+      "PctOfGroup_Before": "0.3%",
+      "GoldenName": "FAJER AL MADINA",
+      "SalesAED_After": "48350",
+      "PctOfGroup_After": "0.3%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Emirates Al Madina Hyper Market LLC",
+      "SalesAED_Before": "45846",
+      "PctOfGroup_Before": "0.3%",
+      "GoldenName": "EMIRATES AL MADINA",
+      "SalesAED_After": "45846",
+      "PctOfGroup_After": "0.3%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "ARAFA AL MADINA SUPERMARKET L.LC",
+      "SalesAED_Before": "37790",
+      "PctOfGroup_Before": "0.3%",
+      "GoldenName": "ARAFA AL MADINA",
+      "SalesAED_After": "37790",
+      "PctOfGroup_After": "0.3%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NAHDHAT AL MADINA SUPERMARKET",
+      "SalesAED_Before": "36906",
+      "PctOfGroup_Before": "0.2%",
+      "GoldenName": "NAHDHAT AL MADINA",
+      "SalesAED_After": "36906",
+      "PctOfGroup_After": "0.2%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "SOUQ AL MADINA HYPERMARKET LLC",
+      "SalesAED_Before": "34085",
+      "PctOfGroup_Before": "0.2%",
+      "GoldenName": "SOUQ AL MADINA",
+      "SalesAED_After": "34085",
+      "PctOfGroup_After": "0.2%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "AMEEN AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "26337",
+      "PctOfGroup_Before": "0.2%",
+      "GoldenName": "AMEEN AL MADINA",
+      "SalesAED_After": "26337",
+      "PctOfGroup_After": "0.2%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "AL MADINA GROUP  |  Revenue: AED 14,970,208  |  48 raw names → 23 golden names  |  52% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NASSEM AL MADINA SUPERMARKET LLC",
+      "SalesAED_Before": "25226",
+      "PctOfGroup_Before": "0.2%",
+      "GoldenName": "NASSEM AL MADINA",
+      "SalesAED_After": "25226",
+      "PctOfGroup_After": "0.2%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Shaklan Market 5 LLC",
+      "SalesAED_Before": "954671",
+      "PctOfGroup_Before": "11.6%",
+      "GoldenName": "SHAKLAN",
+      "SalesAED_After": "4188589",
+      "PctOfGroup_After": "50.9%",
+      "NamesMerged": "9 names",
+      "RevenueLiftedAED": "3233918"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Market 3 LLC",
+      "SalesAED_Before": "494594",
+      "PctOfGroup_Before": "6.0%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Market LLC",
+      "SalesAED_Before": "489345",
+      "PctOfGroup_Before": "6.0%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Market 2 LLC Branch",
+      "SalesAED_Before": "488541",
+      "PctOfGroup_Before": "5.9%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "SHAKLAN HYPERMARKET 3 LLC",
+      "SalesAED_Before": "879970",
+      "PctOfGroup_Before": "10.7%",
+      "GoldenName": "SHAKLAN HYPERMARKET",
+      "SalesAED_After": "2041123",
+      "PctOfGroup_After": "24.8%",
+      "NamesMerged": "4 names",
+      "RevenueLiftedAED": "1161153"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Hypermarket LLC Branch",
+      "SalesAED_Before": "443162",
+      "PctOfGroup_Before": "5.4%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Hypermarket 2 LLC",
+      "SalesAED_Before": "364372",
+      "PctOfGroup_Before": "4.4%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Hypermarket LLC",
+      "SalesAED_Before": "353619",
+      "PctOfGroup_Before": "4.3%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NEW SHAKLAN SUPERMARKET LLC",
+      "SalesAED_Before": "788089",
+      "PctOfGroup_Before": "9.6%",
+      "GoldenName": "NEW SHAKLAN SUPERMARKET",
+      "SalesAED_After": "788089",
+      "PctOfGroup_After": "9.6%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Shaklan 3 Supermarket LLC",
+      "SalesAED_Before": "351911",
+      "PctOfGroup_Before": "4.3%",
+      "GoldenName": "SHAKLAN SUPERMARKET",
+      "SalesAED_After": "728971",
+      "PctOfGroup_After": "8.9%",
+      "NamesMerged": "3 names",
+      "RevenueLiftedAED": "377060"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan Supermarket",
+      "SalesAED_Before": "197742",
+      "PctOfGroup_Before": "2.4%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Shaklan 4 Supermarket LLC",
+      "SalesAED_Before": "179318",
+      "PctOfGroup_Before": "2.2%"
+    },
+    {
+      "GroupTitle": "SHAKLAN GROUP  |  Revenue: AED 8,223,915  |  18 raw names → 5 golden names  |  72% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "SHAKLAN HYPER MARKET 2LLC",
+      "SalesAED_Before": "477143",
+      "PctOfGroup_Before": "5.8%",
+      "GoldenName": "SHAKLAN HYPER",
+      "SalesAED_After": "477143",
+      "PctOfGroup_After": "5.8%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NESTO HYPERMARKET LLC",
+      "SalesAED_Before": "1527449",
+      "PctOfGroup_Before": "7.7%",
+      "GoldenName": "NESTO HYPERMARKET -",
+      "SalesAED_After": "8798621",
+      "PctOfGroup_After": "44.3%",
+      "NamesMerged": "12 names",
+      "RevenueLiftedAED": "7271172"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "NESTO HYPERMARKET SOLEPROPRIETORSHI",
+      "SalesAED_Before": "1164820",
+      "PctOfGroup_Before": "5.9%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "NESTO HYPERMARKET LLC-Branch",
+      "SalesAED_Before": "1098573",
+      "PctOfGroup_Before": "5.5%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "NESTO HYPERMARKET SOLE",
+      "SalesAED_Before": "903411",
+      "PctOfGroup_Before": "4.5%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NESTO HYPERMARKET SOLE PROPRIETORSH",
+      "SalesAED_Before": "3822985",
+      "PctOfGroup_Before": "19.2%",
+      "GoldenName": "NESTO HYPERMARKET PROPRIETORSH",
+      "SalesAED_After": "4256198",
+      "PctOfGroup_After": "21.4%",
+      "NamesMerged": "2 names",
+      "RevenueLiftedAED": "433213"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Nesto Hypermarket LLC (Sole Propri",
+      "SalesAED_Before": "433213",
+      "PctOfGroup_Before": "2.2%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Nesto Hyper Market L.L.C (Branch)",
+      "SalesAED_Before": "1006552",
+      "PctOfGroup_Before": "5.1%",
+      "GoldenName": "NESTO HYPER",
+      "SalesAED_After": "4254440",
+      "PctOfGroup_After": "21.4%",
+      "NamesMerged": "8 names",
+      "RevenueLiftedAED": "3247888"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Nesto Hyper Market SOLE PROPRIETORS",
+      "SalesAED_Before": "647556",
+      "PctOfGroup_Before": "3.3%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "NESTO HYPER MARKET LLC-Branch",
+      "SalesAED_Before": "617117",
+      "PctOfGroup_Before": "3.1%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "Nesto Hyper Market  LLC (Branch)",
+      "SalesAED_Before": "602082",
+      "PctOfGroup_Before": "3.0%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NESTO MARKET L.L.C (BRANCH)",
+      "SalesAED_Before": "548208",
+      "PctOfGroup_Before": "2.8%",
+      "GoldenName": "NESTO",
+      "SalesAED_After": "713891",
+      "PctOfGroup_After": "3.6%",
+      "NamesMerged": "2 names",
+      "RevenueLiftedAED": "165683"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "child",
+      "TreeMarker": "│ └",
+      "RawERPName": "NESTO MARKET LLC",
+      "SalesAED_Before": "165683",
+      "PctOfGroup_Before": "0.8%"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NESTO MARKET LLC (SOLE PROPRIETORSH",
+      "SalesAED_Before": "507183",
+      "PctOfGroup_Before": "2.6%",
+      "GoldenName": "NESTO PROPRIETORSH",
+      "SalesAED_After": "507183",
+      "PctOfGroup_After": "2.6%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Nesto Hyper Market  LLC - DRAGON MA",
+      "SalesAED_Before": "359228",
+      "PctOfGroup_Before": "1.8%",
+      "GoldenName": "NESTO HYPER DRAGON",
+      "SalesAED_After": "359228",
+      "PctOfGroup_After": "1.8%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Nesto Hypermarket (LLC) SPC Fujaira",
+      "SalesAED_Before": "347223",
+      "PctOfGroup_Before": "1.7%",
+      "GoldenName": "NESTO HYPERMARKET FUJAIRA",
+      "SalesAED_After": "347223",
+      "PctOfGroup_After": "1.7%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NEW NESTO CENTER SOLE PROPRIETORSHI",
+      "SalesAED_Before": "237662",
+      "PctOfGroup_Before": "1.2%",
+      "GoldenName": "NEW NESTO CENTER",
+      "SalesAED_After": "237662",
+      "PctOfGroup_After": "1.2%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "8135 Nesto Hypermarket L.L.C (Branc",
+      "SalesAED_Before": "203421",
+      "PctOfGroup_Before": "1.0%",
+      "GoldenName": "NESTO HYPERMARKET BRANC",
+      "SalesAED_After": "203421",
+      "PctOfGroup_After": "1.0%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "NESTO CENTER LLC (SOLE PROPRIETORSH",
+      "SalesAED_Before": "135798",
+      "PctOfGroup_Before": "0.7%",
+      "GoldenName": "NESTO CENTER PROPRIETORSH",
+      "SalesAED_After": "135798",
+      "PctOfGroup_After": "0.7%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    },
+    {
+      "GroupTitle": "NESTO GROUP  |  Revenue: AED 19,864,117  |  31 raw names → 11 golden names  |  65% consolidation",
+      "RowType": "parent",
+      "TreeMarker": "├─",
+      "RawERPName": "Nesto Center LLC",
+      "SalesAED_Before": "50452",
+      "PctOfGroup_Before": "0.3%",
+      "GoldenName": "NESTO CENTER",
+      "SalesAED_After": "50452",
+      "PctOfGroup_After": "0.3%",
+      "NamesMerged": "1 names",
+      "RevenueLiftedAED": "0"
+    }
+  ],
+  "agentQuestions": {
+    "executiveImpact": [
+      {
+        "question": "How many customers exist in more than one ERP?",
+        "answer": "7 customer clusters span multiple ERP systems. The most notable is Friendly Food Qatar, which appears in Infor, Epicor, and Oracle. These cross-ERP clusters represent the highest MDM value."
+      },
+      {
+        "question": "Which dimension had the biggest reduction?",
+        "answer": "Sales channels saw the biggest consolidation — 28 raw channel labels reduced to 12 standardized channels, a 57% reduction. Key Account, Fuel Stations, Self Service Stores, and several others were unified under MODERN TRADE and RETAIL."
+      },
+      {
+        "question": "What’s the total revenue managed across all systems?",
+        "answer": "AED 763.4 million across all 4 ERPs. CBD (SAP) accounts for 92.1% at AED 702.8M, followed by BMB (Epicor) at 5.2%."
+      }
+    ],
+    "dataLandscape": [
+      {
+        "question": "Which ERP has the worst data quality?",
+        "answer": "Epicor has the most quality issues — 24 of 30 customer issues and all 23 product issues originate from Epicor. Common problems include placeholder records (UNFI, SPIN, Sample), generic cash customer entries, and employee records mixed with trade customers."
+      },
+      {
+        "question": "How many countries are in the data?",
+        "answer": "12 countries across all sources. UAE dominates with 602 of 688 customer records (87%). KSA is second with 41 records. The data spans Middle East, Asia, North America, and Africa."
+      },
+      {
+        "question": "Show me the record distribution by source.",
+        "answer": "SAP contributes the most customer records: 412 of 688 (60%). Epicor is second with 216 (31%). Oracle has 44 and Infor has 16. For products, Epicor leads with 543 of 851 records."
+      }
+    ],
+    "matchingEngine": [
+      {
+        "question": "Show me the Lulu group — how many names were consolidated?",
+        "answer": "Lulu Group had 82 different raw names across SAP consolidated into 6 golden entities, representing AED 83.9M in revenue. The largest — LULU HYPERMARKET — absorbed 53 name variations worth AED 67.6M. This is a 93% consolidation rate."
+      },
+      {
+        "question": "What’s the difference between exact and fuzzy matching?",
+        "answer": "Exact matching finds records with identical core names and countries after the 8-step cleaning pipeline — 179 pairs found with 100% confidence. Fuzzy matching uses a composite score (Token Sort Ratio x 0.5 + Token Set Ratio x 0.3 + Jaccard x 0.2) to find near-matches — 21 pairs found with confidence between 0.85 and 0.96."
+      },
+      {
+        "question": "Which clusters span multiple ERP systems?",
+        "answer": "7 customer clusters span multiple ERPs. Notable examples: Friendly Food Qatar (Infor + Epicor + Oracle), Al Foah (Epicor + Infor), Dubai Duty Free (Epicor + SAP), and Al Homaizi (Epicor + Oracle). For products, 6 Date Crown (Infor) <-> Al Foah (SAP) matches were found."
+      }
+    ],
+    "dataQuality": [
+      {
+        "question": "What should we do with the flagged records?",
+        "answer": "Of 30 customer issues: 11 are recommended for deletion (placeholder records like UNFI, SPIN, Sample), 11 for archival (generic cash customers, internal employee records), and 8 for manual review (ambiguous abbreviations like M.H., K.M. that need investigation)."
+      },
+      {
+        "question": "Why are most quality issues from Epicor?",
+        "answer": "Epicor has 24 of 30 customer issues (80%) and all 23 product issues. The primary cause: Epicor’s customer master contains system test records, placeholder entries, generic cash customer accounts, and employee records that weren’t cleaned up. SAP and Oracle have stricter data entry controls."
+      },
+      {
+        "question": "How many records should be deleted?",
+        "answer": "11 customer records and 3 product records are recommended for deletion — these are definitively placeholder or test records (single-word entries like UNFI, SPIN, KSA, or explicitly marked do-not-use records). All 14 are from Epicor."
+      }
+    ],
+    "survivorshipRules": [
+      {
+        "question": "Why was SAP chosen as the primary source for Customer Name?",
+        "answer": "The survivorship rule for Customer Name is ‘Highest Completeness’ — the system selects whichever source has the longest, most complete legal name. SAP typically wins because it maintains full legal entity names (e.g., ‘Majid Al Futtaim Hypermarkets LLC’) while Epicor often truncates."
+      },
+      {
+        "question": "What happens if I change the source priority order?",
+        "answer": "If Oracle were ranked above SAP, approximately 14 golden records would change their primary source. Cross-ERP clusters where both SAP and Oracle contribute would see field-level changes in Address and Phone resolution."
+      },
+      {
+        "question": "Explain the Product master survivorship rules.",
+        "answer": "Product survivorship is primarily rule-based rather than source-priority driven. Brands are normalized via a 40+ variant dictionary. Categories are mapped to a 5-level enterprise hierarchy. Pack sizes are extracted via regex from descriptions. Quality flags are assigned by detection rules (INVALID for rebates/services, INCOMPLETE for missing fields)."
+      }
+    ],
+    "goldenRecord": [
+      {
+        "question": "Walk me through how this golden record was created.",
+        "answer": "The pipeline starts at Bronze (raw ingestion with profiling), then Silver (8 cleaning steps: text normalization, special chars, legal suffix removal, abbreviation expansion, noise words, prefix normalization, duplicate word removal, core name extraction), then Gold (matching via exact/fuzzy, cluster formation, golden record election by quality > source trust > completeness > tiebreaker)."
+      },
+      {
+        "question": "How many sources contributed to this record?",
+        "answer": "This depends on the record. Most golden records come from a single source (the majority are single-member clusters). 7 customer clusters and 6 product pairs span multiple ERPs. The record profile panel on the right shows source contribution for the selected record."
+      },
+      {
+        "question": "Show me the audit trail for AL BARAKAH.",
+        "answer": "AL BARAKAH (GCID-00004) has 2 cluster members — both from Infor. ‘AL BARAKAH DATES FACTORY LLC’ matched with ‘AL BARAKH DATES TR. LLC’ via fuzzy match (0.89 confidence). Key transformations: S3 stripped legal suffixes, S4 expanded TR to TRADING, S5 removed noise word TRADING, S8 extracted core name AL BARAKAH/AL BARAKH. The fuzzy matcher caught the spelling variation."
+      }
+    ]
+  }
+}
