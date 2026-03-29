@@ -21,7 +21,7 @@ export function InfoTooltip({ text, className }: InfoTooltipProps) {
         i
       </span>
       {show && (
-        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 text-[11px] leading-relaxed text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-lg whitespace-nowrap max-w-[260px] text-wrap z-50 pointer-events-none shadow-lg">
+        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 text-[11px] leading-relaxed text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-lg max-w-[280px] z-50 pointer-events-none shadow-lg" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
           {text}
           <span className="absolute top-full left-1/2 -translate-x-1/2 -mt-px border-4 border-transparent border-t-gray-800 dark:border-t-gray-700" />
         </span>

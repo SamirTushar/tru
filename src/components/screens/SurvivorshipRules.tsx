@@ -48,7 +48,7 @@ function RationaleTag({ tag, tip }: { tag: string; tip: string }) {
       <span className="inline-flex px-2 py-0.5 rounded text-[11px] font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-help whitespace-nowrap">
         {tag}
       </span>
-      <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 text-[11px] leading-relaxed text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-lg whitespace-nowrap max-w-[240px] text-wrap z-50 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150 shadow-lg">
+      <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 text-[11px] leading-relaxed text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-lg max-w-[260px] z-50 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150 shadow-lg">
         {tip}
         <span className="absolute top-full left-1/2 -translate-x-1/2 -mt-px border-4 border-transparent border-t-gray-800 dark:border-t-gray-700" />
       </span>
