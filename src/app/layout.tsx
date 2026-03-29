@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TRU — Trusted Record Unification",
-  description: "Master Data Management Platform — Agthia Group",
+  description: "Master Data Management Platform",
 };
 
 export default function RootLayout({
