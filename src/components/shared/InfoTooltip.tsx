@@ -21,7 +21,7 @@ export function InfoTooltip({ text, className }: InfoTooltipProps) {
         i
       </span>
       {show && (
-        <span className="fixed-tooltip absolute bottom-full left-0 mb-2 px-3 py-1.5 text-[11px] leading-snug text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-md w-max max-w-[420px] z-50 pointer-events-none shadow-lg">
+        <span className="absolute bottom-full left-0 mb-2 px-3 py-1.5 text-[11px] leading-snug text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-md z-50 pointer-events-none shadow-lg" style={{ width: 'max-content', maxWidth: '320px' }}>
           {text}
         </span>
       )}
