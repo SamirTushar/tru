@@ -143,7 +143,7 @@ function HarmonizationTab({ activeMaster }: { activeMaster: string }) {
 
   if (activeMaster === 'customer') {
     const rows = [
-      { dim: 'Customer Names', before: '602 raw names', after: '442 golden names', reduction: '27%' },
+      { dim: 'Customer Names', before: '688 raw names', after: '488 golden names', reduction: '29.1%' },
       { dim: 'Duplicate Clusters', before: '0 identified', after: '200 resolved', reduction: '100%' },
       { dim: 'Cross-ERP Entities', before: '0 linked', after: '7 clusters', reduction: 'New' },
       { dim: 'Country Formats', before: '12 variants', after: '12 ISO standard', reduction: 'Normalized' },
