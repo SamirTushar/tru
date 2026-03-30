@@ -42,7 +42,7 @@ function HeroMetrics({ activeMaster }: { activeMaster: string }) {
   if (activeMaster === 'all') {
     return (
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-        <MetricCard value="602 → 442" label="Customers" subtitle={<ReductionBadge pct="27%" />} tooltip="Customer entity count before and after deduplication" />
+        <MetricCard value="688 → 488" label="Customers" subtitle={<ReductionBadge pct="29.1%" />} tooltip="Customer entity count before and after deduplication" />
         <MetricCard value="50 → 32" label="Categories" subtitle={<ReductionBadge pct="36%" />} tooltip="Product category count before and after harmonization" />
         <MetricCard value="34 → 29" label="Brands" subtitle={<ReductionBadge pct="15%" />} tooltip="Brand count before and after dictionary normalization" />
         <MetricCard value="28 → 12" label="Channels" subtitle={<ReductionBadge pct="57%" />} tooltip="Sales channel count before and after standardization" />

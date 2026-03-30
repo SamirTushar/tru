@@ -29,8 +29,8 @@
       "after": 32
     },
     "customers": {
-      "before": 602,
-      "after": 442
+      "before": 688,
+      "after": 488
     },
     "brands": {
       "before": 34,
@@ -52,11 +52,11 @@
     },
     {
       "dimension": "Customer",
-      "beforeCount": 602,
+      "beforeCount": 688,
       "beforeTopShare": "14.8%",
-      "afterCount": 442,
+      "afterCount": 488,
       "afterTopShare": "14.8%",
-      "reduction": "27%"
+      "reduction": "29.1%"
     },
     {
       "dimension": "Brand",
