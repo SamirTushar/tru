@@ -35,7 +35,6 @@ export const SCREENS: ScreenConfig[] = [
   { id: 'executiveImpact', label: 'Executive Impact', icon: 'BarChart3', group: 'OVERVIEW' },
   { id: 'dataLandscape', label: 'Data Landscape', icon: 'Map', group: 'OVERVIEW' },
   { id: 'matchingEngine', label: 'Matching Engine', icon: 'GitMerge', group: 'PROCESS' },
-  { id: 'dataQuality', label: 'Data Quality', icon: 'AlertCircle', group: 'PROCESS' },
   { id: 'survivorshipRules', label: 'Survivorship Rules', icon: 'Scale', group: 'OUTPUT' },
   { id: 'goldenRecord', label: 'Golden Record', icon: 'Award', group: 'OUTPUT' },
 ];

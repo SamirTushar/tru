@@ -25,35 +25,22 @@ const PRODUCT_RESOLUTION_OPTIONS = [
 ];
 
 const CUSTOMER_RULES = [
-  { field: 'Customer Name', rule: 'Highest Completeness', tag: 'Longest Name', tip: 'Selects the longest, most complete legal name' },
-  { field: 'Country', rule: 'SAP Preferred', tag: 'ISO Standard', tip: 'SAP uses ISO standardized country codes' },
-  { field: 'Phone', rule: 'Most Recent', tag: 'Latest Update', tip: 'Most recently updated contact data wins' },
-  { field: 'Address', rule: 'Oracle Preferred', tag: 'Most Complete', tip: 'Oracle address records have highest completeness' },
-  { field: 'Segment', rule: 'Most Frequent Value', tag: '3 of 4 Systems', tip: 'Value appearing in most source systems wins' },
-  { field: 'Region', rule: 'SAP Preferred', tag: 'Official Hierarchy', tip: 'SAP maintains the official regional structure' },
-  { field: 'Channel', rule: 'Most Recent', tag: 'Latest Update', tip: 'Most recently assigned channel wins' },
+  { field: 'Customer Name', rule: 'Highest Completeness' },
+  { field: 'Country', rule: 'SAP Preferred' },
+  { field: 'Phone', rule: 'Most Recent' },
+  { field: 'Address', rule: 'Oracle Preferred' },
+  { field: 'Segment', rule: 'Most Frequent Value' },
+  { field: 'Region', rule: 'SAP Preferred' },
+  { field: 'Channel', rule: 'Most Recent' },
 ];
 
 const PRODUCT_RULES = [
-  { field: 'Brand', rule: 'Dictionary Normalization', tag: '40+ Variants', tip: 'Raw brand variants mapped to canonical names via dictionary' },
-  { field: 'Category', rule: 'Hierarchy Mapping', tag: '5-Level Tree', tip: 'Source codes mapped to enterprise product hierarchy' },
-  { field: 'Pack Size', rule: 'Regex Extraction', tag: 'Pattern Match', tip: 'Pack size extracted from product descriptions via regex' },
-  { field: 'Product Family', rule: 'Code Prefix Detection', tag: 'ID Prefix', tip: 'Product ID prefix determines type (FG, RM, etc.)' },
-  { field: 'Quality Flag', rule: 'Rule-based Classification', tag: 'Auto-Flagged', tip: 'Invalid if rebate/service; incomplete if missing fields' },
+  { field: 'Brand', rule: 'Dictionary Normalization' },
+  { field: 'Category', rule: 'Hierarchy Mapping' },
+  { field: 'Pack Size', rule: 'Regex Extraction' },
+  { field: 'Product Family', rule: 'Code Prefix Detection' },
+  { field: 'Quality Flag', rule: 'Rule-based Classification' },
 ];
-
-function RationaleTag({ tag, tip }: { tag: string; tip: string }) {
-  return (
-    <span className="relative group">
-      <span className="inline-flex px-2 py-0.5 rounded text-[11px] font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-help whitespace-nowrap">
-        {tag}
-      </span>
-      <span className="absolute bottom-full left-0 mb-2 px-3 py-1.5 text-[11px] leading-snug text-gray-100 bg-gray-800 dark:bg-gray-700 rounded-md z-50 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150 shadow-lg" style={{ width: 'max-content', maxWidth: '320px' }}>
-        {tip}
-      </span>
-    </span>
-  );
-}
 
 export function SurvivorshipRules() {
   const { activeMaster } = useApp();
@@ -94,10 +81,9 @@ function CustomerRulesTable() {
             <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">
               <span className="inline-flex items-center gap-1">
                 Resolution Rule
-                <InfoTooltip text="The logic used to pick the winning value when multiple source systems have different data for the same field." />
+                <InfoTooltip text="Highest Completeness — longest, most complete value wins. Most Recent — most recently updated value wins. Most Frequent Value — value appearing in most source systems wins. [Source] Preferred — always use that source's value." />
               </span>
             </th>
-            <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Rationale</th>
           </tr>
         </thead>
         <tbody>
@@ -115,7 +101,6 @@ function CustomerRulesTable() {
                   ))}
                 </select>
               </td>
-              <td className="px-6 py-4"><RationaleTag tag={rule.tag} tip={rule.tip} /></td>
             </tr>
           ))}
         </tbody>
@@ -140,10 +125,9 @@ function ProductRulesTable() {
             <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">
               <span className="inline-flex items-center gap-1">
                 Resolution Rule
-                <InfoTooltip text="The logic used to pick the winning value when multiple source systems have different data for the same field." />
+                <InfoTooltip text="Dictionary Normalization — raw variants mapped to canonical names. Hierarchy Mapping — source codes mapped to enterprise hierarchy. Regex Extraction — values extracted via pattern matching. Code Prefix Detection — ID prefix determines classification. Rule-based Classification — automated flagging based on business rules." />
               </span>
             </th>
-            <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Rationale</th>
           </tr>
         </thead>
         <tbody>
@@ -161,7 +145,6 @@ function ProductRulesTable() {
                   ))}
                 </select>
               </td>
-              <td className="px-6 py-4"><RationaleTag tag={rule.tag} tip={rule.tip} /></td>
             </tr>
           ))}
         </tbody>

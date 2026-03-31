@@ -37,8 +37,8 @@ function getNum(r: MatchRecord, key: string): number {
 
 function deriveMatchData(fuzzyLog: MatchRecord[], exactLog: MatchRecord[]) {
   const validFuzzy = fuzzyLog.filter(r => getStr(r, 'Core Name A'));
-  const needsReview = validFuzzy.filter(r => getNum(r, FK.CONF) < 0.95);
-  const autoMergedFuzzy = validFuzzy.filter(r => getNum(r, FK.CONF) >= 0.95);
+  const needsReview = validFuzzy.filter(r => getNum(r, FK.CONF) < 0.92);
+  const autoMergedFuzzy = validFuzzy.filter(r => getNum(r, FK.CONF) >= 0.92);
   // Normalize exact matches to same shape for auto-merged display
   const autoMerged = [
     ...exactLog.map(r => ({ ...r, _type: 'exact' as const, _conf: getNum(r, 'Confidence') })),
@@ -103,8 +103,9 @@ export function MatchingEngine() {
   }
 
   const isProduct = activeMaster === 'product';
+  const isAll = activeMaster === 'all';
 
-  // Derive data
+  // Derive data — use customer matching data for "all" and "customer"
   const { needsReview, autoMerged } = useMemo(() => {
     if (isProduct) {
       return { needsReview: [] as MatchRecord[], autoMerged: [] as (MatchRecord & { _type: string; _conf: number })[] };
@@ -131,7 +132,14 @@ export function MatchingEngine() {
     <div className="space-y-7">
       {/* Hero Metrics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-        {isProduct ? (
+        {isAll ? (
+          <>
+            <MetricCard value="179" label="Exact Matches" subtitle="Customer domain" tooltip="Record pairs with identical core name and country after cleaning pipeline" />
+            <MetricCard value="21" label="Fuzzy Matches" subtitle="Confidence >= 0.85" tooltip="Record pairs matched by composite similarity score (>= 0.85 threshold)" />
+            <MetricCard value="13" label="Cross-ERP Clusters" subtitle="7 customer + 6 product" tooltip="Entity groups that span multiple ERP systems across all domains" />
+            <MetricCard value="217" label="Total Duplicates" subtitle="200 customer + 17 product" tooltip="Total duplicate records identified and resolved across all sources and domains" />
+          </>
+        ) : isProduct ? (
           <>
             <MetricCard value="17" label="Within-Source Dupes" subtitle="Same Product ID" tooltip="Duplicate records found within the same ERP system" />
             <MetricCard value="6" label="Cross-Source Matches" subtitle="Infor <> SAP" tooltip="Product matches found across different ERP systems" />

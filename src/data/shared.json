@@ -3499,20 +3499,6 @@
         "answer": "7 customer clusters span multiple ERPs. Notable examples: Friendly Food Qatar (Infor + Epicor + Oracle), Al Foah (Epicor + Infor), Dubai Duty Free (Epicor + SAP), and Al Homaizi (Epicor + Oracle). For products, 6 Date Crown (Infor) <-> Al Foah (SAP) matches were found."
       }
     ],
-    "dataQuality": [
-      {
-        "question": "What should we do with the flagged records?",
-        "answer": "Of 30 customer issues: 11 are recommended for deletion (placeholder records like UNFI, SPIN, Sample), 11 for archival (generic cash customers, internal employee records), and 8 for manual review (ambiguous abbreviations like M.H., K.M. that need investigation)."
-      },
-      {
-        "question": "Why are most quality issues from Epicor?",
-        "answer": "Epicor has 24 of 30 customer issues (80%) and all 23 product issues. The primary cause: Epicor’s customer master contains system test records, placeholder entries, generic cash customer accounts, and employee records that weren’t cleaned up. SAP and Oracle have stricter data entry controls."
-      },
-      {
-        "question": "How many records should be deleted?",
-        "answer": "11 customer records and 3 product records are recommended for deletion — these are definitively placeholder or test records (single-word entries like UNFI, SPIN, KSA, or explicitly marked do-not-use records). All 14 are from Epicor."
-      }
-    ],
     "survivorshipRules": [
       {
         "question": "Why was SAP chosen as the primary source for Customer Name?",

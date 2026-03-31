@@ -81,14 +81,43 @@ export function GoldenRecord() {
 
   const isOrg = activeMaster === 'organisation';
   const isProduct = activeMaster === 'product';
-  const records: Record<string, unknown>[] = isOrg ? [] : isProduct ? productData.goldenRecords : customerData.goldLayerRecords;
+  const isAll = activeMaster === 'all';
 
-  const idKey = isProduct ? 'GPID' : 'Global Customer ID';
-  const nameKey = isProduct ? 'Golden Description' : 'Core Name (Golden)';
-  const countryKey = isProduct ? '' : 'Country';
-  const sourceKey = isProduct ? 'Primary Source' : 'Primary Source ERP';
-  const qualityKey = isProduct ? 'Quality' : 'Quality Flag';
-  const sizeKey = isProduct ? '' : 'Cluster Size';
+  // Normalize records for "all" view — add _type and normalized accessor fields
+  const records: Record<string, unknown>[] = useMemo(() => {
+    if (isOrg) return [];
+    if (isAll) {
+      const custNorm = customerData.goldLayerRecords.map(r => ({
+        ...r,
+        _type: 'Customer',
+        _id: getField(r, 'Global Customer ID'),
+        _name: getField(r, 'Core Name (Golden)'),
+        _source: getField(r, 'Primary Source ERP'),
+        _quality: getField(r, 'Quality Flag'),
+        _country: getField(r, 'Country'),
+        _size: getField(r, 'Cluster Size'),
+      }));
+      const prodNorm = productData.goldenRecords.map(r => ({
+        ...r,
+        _type: 'Product',
+        _id: getField(r, 'GPID'),
+        _name: getField(r, 'Golden Description'),
+        _source: getField(r, 'Primary Source'),
+        _quality: getField(r, 'Quality'),
+        _country: '',
+        _size: '',
+      }));
+      return [...custNorm, ...prodNorm] as Record<string, unknown>[];
+    }
+    return isProduct ? productData.goldenRecords : customerData.goldLayerRecords;
+  }, [isOrg, isAll, isProduct]);
+
+  const idKey = isAll ? '_id' : isProduct ? 'GPID' : 'Global Customer ID';
+  const nameKey = isAll ? '_name' : isProduct ? 'Golden Description' : 'Core Name (Golden)';
+  const countryKey = isAll ? '' : isProduct ? '' : 'Country';
+  const sourceKey = isAll ? '_source' : isProduct ? 'Primary Source' : 'Primary Source ERP';
+  const qualityKey = isAll ? '_quality' : isProduct ? 'Quality' : 'Quality Flag';
+  const sizeKey = isAll ? '' : isProduct ? '' : 'Cluster Size';
 
   const filtered = useMemo(() => {
     if (isOrg) return [];
@@ -138,10 +167,19 @@ export function GoldenRecord() {
   if (selectedIdx !== null) {
     const record = filtered[selectedIdx];
     if (!record) { setSelectedIdx(null); return null; }
-    const recId = String(getField(record, idKey));
-    const recName = String(getField(record, nameKey));
-    const recSource = String(getField(record, sourceKey));
-    const recQuality = String(getField(record, qualityKey));
+
+    // In "all" mode, determine record type for correct detail rendering
+    const detailIsProduct = isAll ? record._type === 'Product' : isProduct;
+    const detailIdKey = detailIsProduct ? 'GPID' : 'Global Customer ID';
+    const detailNameKey = detailIsProduct ? 'Golden Description' : 'Core Name (Golden)';
+    const detailSourceKey = detailIsProduct ? 'Primary Source' : 'Primary Source ERP';
+    const detailQualityKey = detailIsProduct ? 'Quality' : 'Quality Flag';
+    const detailSilverData = detailIsProduct ? productData.silverAudit : customerData.silverAudit;
+
+    const recId = String(getField(record, isAll ? '_id' : detailIdKey));
+    const recName = String(getField(record, isAll ? '_name' : detailNameKey));
+    const recSource = String(getField(record, isAll ? '_source' : detailSourceKey));
+    const recQuality = String(getField(record, isAll ? '_quality' : detailQualityKey));
 
     return (
       <DetailPage
@@ -150,11 +188,11 @@ export function GoldenRecord() {
         recName={recName}
         recSource={recSource}
         recQuality={recQuality}
-        isProduct={isProduct}
-        idKey={idKey}
-        nameKey={nameKey}
-        sourceKey={sourceKey}
-        silverData={silverData}
+        isProduct={detailIsProduct}
+        idKey={detailIdKey}
+        nameKey={detailNameKey}
+        sourceKey={detailSourceKey}
+        silverData={detailSilverData}
         onBack={() => setSelectedIdx(null)}
       />
     );
@@ -164,7 +202,14 @@ export function GoldenRecord() {
   return (
     <div className="space-y-7">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-        {isProduct ? (
+        {isAll ? (
+          <>
+            <MetricCard value="1,322" label="Golden Records" subtitle="488 customer + 834 product" tooltip="Total unique entities across all domains after deduplication" />
+            <MetricCard value="1,539" label="Source Records" subtitle="Processed" tooltip="Total raw records from all ERPs across all domains" />
+            <MetricCard value="4" label="ERPs Linked" subtitle="Per record" tooltip="Maximum number of ERP sources per golden record" />
+            <MetricCard value="100%" label="Traceability" subtitle="Full lineage" tooltip="Every field traced to its source ERP and transformation step" />
+          </>
+        ) : isProduct ? (
           <>
             <MetricCard value="834" label="Golden Records" subtitle="Unique products" tooltip="Unique products after deduplication" />
             <MetricCard value="851" label="Source Records" subtitle="Processed" tooltip="Total raw product records from all ERPs" />
@@ -191,6 +236,7 @@ export function GoldenRecord() {
           <thead>
             <tr>
               <SortHeader label="ID" sortKey={idKey} currentSort={sortKey} dir={sortDir} onSort={handleSort} />
+              {isAll && <SortHeader label="Type" sortKey="_type" currentSort={sortKey} dir={sortDir} onSort={handleSort} />}
               <SortHeader label="Golden Name" sortKey={nameKey} currentSort={sortKey} dir={sortDir} onSort={handleSort} />
               {countryKey && <SortHeader label="Country" sortKey={countryKey} currentSort={sortKey} dir={sortDir} onSort={handleSort} />}
               <SortHeader label="Source" sortKey={sourceKey} currentSort={sortKey} dir={sortDir} onSort={handleSort} />
@@ -205,6 +251,7 @@ export function GoldenRecord() {
               return (
                 <tr key={globalIdx} onClick={() => setSelectedIdx(globalIdx)} className="cursor-pointer border-b border-gray-50 dark:border-slate-700/30 hover:bg-gray-50/50 dark:hover:bg-slate-800/20 transition-colors duration-150">
                   <td className="px-4 py-4 font-mono text-xs text-gray-500">{String(getField(rec, idKey))}</td>
+                  {isAll && <td className="px-4 py-4"><span className={cn('inline-flex px-2 py-0.5 rounded-full text-[10px] font-semibold text-white', rec._type === 'Customer' ? 'bg-blue-500' : 'bg-purple-500')}>{String(rec._type)}</span></td>}
                   <td className="px-4 py-4 font-medium text-gray-900 dark:text-gray-100">{String(getField(rec, nameKey))}</td>
                   {countryKey && <td className="px-4 py-4 text-gray-500">{String(getField(rec, countryKey))}</td>}
                   <td className="px-4 py-4"><ERPBadge system={String(getField(rec, sourceKey))} /></td>

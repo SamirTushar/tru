@@ -66,7 +66,17 @@ function HeroMetrics({ activeMaster }: { activeMaster: string }) {
         <MetricCard value="851" label="Total Source Records" subtitle="4 connected systems" tooltip="Total raw product records ingested from all ERP systems" />
         <MetricCard value="834" label="Golden Records" subtitle="Unique products" tooltip="Unique products after deduplication — one record per real-world product" />
         <MetricCard value="17" label="Duplicates Identified" subtitle="2.0% dedup rate" tooltip="Records identified as duplicates across all sources" />
-        <MetricCard value="97/100" label="Data Quality" subtitle="23 issues in Epicor only" tooltip="Score based on completeness, validity, and consistency of source records" />
+        <MetricCard value="97.3%" label="Data Quality" subtitle="Valid records across all sources" tooltip="Percentage of records that are valid — excludes invalid and suspect records" />
+      </div>
+    );
+  }
+  if (activeMaster === 'all') {
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <MetricCard value="1,539" label="Total Source Records" subtitle="688 customer + 851 product" tooltip="Total raw records ingested from all ERP systems across all domains" />
+        <MetricCard value="1,322" label="Golden Records" subtitle="488 customer + 834 product" tooltip="Unique entities after deduplication across all domains" />
+        <MetricCard value="217" label="Duplicates Identified" subtitle="14.1% dedup rate" tooltip="Total duplicate records identified across customer and product domains" />
+        <MetricCard value="96.6%" label="Data Quality" subtitle="Valid records across all sources" tooltip="Percentage of records that are valid — excludes invalid and suspect records" />
       </div>
     );
   }
@@ -80,19 +90,35 @@ function HeroMetrics({ activeMaster }: { activeMaster: string }) {
       </div>
     );
   }
+  if (activeMaster === 'customer') {
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <MetricCard value="688" label="Total Source Records" subtitle="4 connected systems" tooltip="Total raw records ingested from all ERP systems" />
+        <MetricCard value="488" label="Golden Records" subtitle="Unique entities" tooltip="Unique entities after deduplication — one record per real-world customer" />
+        <MetricCard value="200" label="Duplicates Identified" subtitle="29.1% dedup rate" tooltip="Records identified as duplicates across all sources" />
+        <MetricCard value="95.6%" label="Data Quality" subtitle="Valid records across all sources" tooltip="Percentage of records that are valid — excludes invalid and suspect records" />
+      </div>
+    );
+  }
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
       <MetricCard value="688" label="Total Source Records" subtitle="4 connected systems" tooltip="Total raw records ingested from all ERP systems" />
       <MetricCard value="488" label="Golden Records" subtitle="Unique entities" tooltip="Unique entities after deduplication — one record per real-world customer" />
       <MetricCard value="200" label="Duplicates Identified" subtitle="29.1% dedup rate" tooltip="Records identified as duplicates across all sources" />
-      <MetricCard value="93/100" label="Data Quality" subtitle="Score across all sources" tooltip="Score based on completeness, validity, and consistency of source records" />
+      <MetricCard value="95.6%" label="Data Quality" subtitle="Valid records across all sources" tooltip="Percentage of records that are valid — excludes invalid and suspect records" />
     </div>
   );
 }
 
 function SourceTable({ activeMaster }: { activeMaster: string }) {
   const isProduct = activeMaster === 'product';
-  const breakdown = isProduct ? productData.sourceBreakdown : customerData.sourceBreakdown;
+  const isAll = activeMaster === 'all';
+  const breakdown = isAll
+    ? customerData.sourceBreakdown.map((c, i) => {
+        const p = productData.sourceBreakdown[i];
+        return { system: c.system, total: c.total + p.total, golden: c.golden + p.golden, dupes: c.dupes + p.dupes, invalid: c.invalid + p.invalid };
+      })
+    : isProduct ? productData.sourceBreakdown : customerData.sourceBreakdown;
   const totalRow = {
     total: breakdown.reduce((s, r) => s + r.total, 0),
     golden: breakdown.reduce((s, r) => s + r.golden, 0),
@@ -105,8 +131,8 @@ function SourceTable({ activeMaster }: { activeMaster: string }) {
           <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">System</th>
           <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Total</th>
           <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Golden</th>
-          {!isProduct && <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Valid</th>}
-          {!isProduct && <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Suspect</th>}
+          {!isProduct && !isAll && <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Valid</th>}
+          {!isProduct && !isAll && <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Suspect</th>}
           <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">Invalid</th>
           <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-gray-400 border-b border-gray-100 dark:border-slate-700/50">
             <span className="inline-flex items-center gap-1">Dup Rate <InfoTooltip text="Percentage of records in this source identified as duplicates" /></span>
@@ -119,18 +145,18 @@ function SourceTable({ activeMaster }: { activeMaster: string }) {
             <td className="px-6 py-4"><ERPBadge system={row.system} /></td>
             <td className="px-6 py-4 text-right font-medium text-gray-900 dark:text-gray-100">{row.total}</td>
             <td className="px-6 py-4 text-right text-gray-700 dark:text-gray-300">{row.golden}</td>
-            {!isProduct && <td className="px-6 py-4 text-right text-gray-700 dark:text-gray-300">{(row as typeof customerData.sourceBreakdown[0]).valid}</td>}
-            {!isProduct && <td className="px-6 py-4 text-right text-gray-700 dark:text-gray-300">{(row as typeof customerData.sourceBreakdown[0]).suspect}</td>}
+            {!isProduct && !isAll && <td className="px-6 py-4 text-right text-gray-700 dark:text-gray-300">{(row as typeof customerData.sourceBreakdown[0]).valid}</td>}
+            {!isProduct && !isAll && <td className="px-6 py-4 text-right text-gray-700 dark:text-gray-300">{(row as typeof customerData.sourceBreakdown[0]).suspect}</td>}
             <td className="px-6 py-4 text-right text-gray-700 dark:text-gray-300">{row.invalid}</td>
-            <td className="px-6 py-4 text-right text-gray-500">{'dupRate' in row ? row.dupRate : `${((row.dupes / row.total) * 100).toFixed(1)}%`}</td>
+            <td className="px-6 py-4 text-right text-gray-500">{'dupRate' in row ? String(row.dupRate) : `${((row.dupes / row.total) * 100).toFixed(1)}%`}</td>
           </tr>
         ))}
         <tr className="bg-gray-50/50 dark:bg-slate-800/30 font-semibold">
           <td className="px-6 py-4 text-gray-900 dark:text-gray-100">Total</td>
           <td className="px-6 py-4 text-right">{totalRow.total}</td>
           <td className="px-6 py-4 text-right">{totalRow.golden}</td>
-          {!isProduct && <td className="px-6 py-4 text-right">—</td>}
-          {!isProduct && <td className="px-6 py-4 text-right">—</td>}
+          {!isProduct && !isAll && <td className="px-6 py-4 text-right">—</td>}
+          {!isProduct && !isAll && <td className="px-6 py-4 text-right">—</td>}
           <td className="px-6 py-4 text-right">—</td>
           <td className="px-6 py-4 text-right">{((totalRow.dupes / totalRow.total) * 100).toFixed(1)}%</td>
         </tr>
@@ -176,7 +202,13 @@ const COUNTRY_COLORS = ['#3B82F6', '#F97316', '#8B5CF6', '#06B6D4', '#10B981', '
 
 function SourceCountryDonuts({ activeMaster }: { activeMaster: string }) {
   const isProduct = activeMaster === 'product';
-  const breakdown = isProduct ? productData.sourceBreakdown : customerData.sourceBreakdown;
+  const isAll = activeMaster === 'all';
+  const breakdown = isAll
+    ? customerData.sourceBreakdown.map((c, i) => {
+        const p = productData.sourceBreakdown[i];
+        return { system: c.system, total: c.total + p.total, golden: c.golden + p.golden, dupes: c.dupes + p.dupes, invalid: c.invalid + p.invalid };
+      })
+    : isProduct ? productData.sourceBreakdown : customerData.sourceBreakdown;
   const sourceData = breakdown.map(r => ({ name: r.system, value: r.total }));
   const sourceTotal = sourceData.reduce((s, d) => s + d.value, 0);
 
